@@ -12,6 +12,8 @@ rasa_server_url = 'http://localhost:5005/webhooks/rest/webhook'
 def index():
     return render_template('index.html')
 
+# this is a change\
+
 @app.route('/upload', methods=['POST'])
 def upload():
     if request.method == 'POST':
